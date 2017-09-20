@@ -1,0 +1,41 @@
+{
+  "name": "hackathon-default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
+    "jest-css-modules": "^1.1.0",
+    "postcss-loader": "^0.8.0",
+    "postcss-modules": "^0.1.3",
+    "react-addons-test-utils": "^15.6.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "start": "webpack-dev-server --port 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "transform": {".*": "./node_modules/jest-css-modules"}
+  }
+}
